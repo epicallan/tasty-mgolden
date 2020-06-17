@@ -6,7 +6,13 @@ Please refer to the [README.md](README.md) for usage instructions.
 
 -}
 
-module Test.Tasty.MGolden (Mode(..), goldenTest, printDetails) where
+module Test.Tasty.MGolden
+  ( Golden (..)
+  , Mode(..)
+  , goldenTest
+  , printDetails
+  , runGolden
+  ) where
 
 import Control.Applicative (empty)
 import Prelude hiding (print, putStrLn)
